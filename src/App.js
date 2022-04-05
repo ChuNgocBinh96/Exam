@@ -40,19 +40,22 @@ class App extends React.Component {
     const { checked, expanded } = this.state;
 
     return (
-      <CheckboxTree
-        nodes={nodes}
-        checkModel="all"
-        checked={checked}
-        expanded={expanded}
-        // iconsClass="fa5"
-        onCheck={this.onCheck}
-        onExpand={this.onExpand}
-        icons={{
-          check: <span className="rct-icon rct-icon-check" />,
-          uncheck: <span className="rct-icon rct-icon-uncheck" />,
-        }}
-      />
+      <>
+        <CheckboxTree
+          nodes={nodes}
+          checkModel="all"
+          checked={checked}
+          expanded={expanded}
+          // iconsClass="fa5"
+          onCheck={this.onCheck}
+          onExpand={this.onExpand}
+          icons={{
+            check: <span className="rct-icon rct-icon-check" />,
+            uncheck: <span className="rct-icon rct-icon-uncheck" />,
+          }}
+        />
+        <div>đsdsd</div>
+      </>
     );
   }
 }
